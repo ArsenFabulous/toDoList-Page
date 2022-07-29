@@ -5,7 +5,9 @@ let storagedHtml = localStorage.getItem('localizedHtml'); // данные из l
 
 
   //чтение из localStorage
+  if (storagedHtml != 'null') {
   taskList.insertAdjacentHTML('afterend', storagedHtml);
+  }
   let closeButtonS = document.querySelectorAll('.close');
   butt = document.getElementById('button');
   //функция удаления
