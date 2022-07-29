@@ -3,9 +3,9 @@ const tasksTextArea = document.getElementById('place'); //строка ввод�
 let taskList = document.getElementById("taskList"); // раздел для добавления задач
 let storagedHtml = localStorage.getItem('localizedHtml'); // данные из localStorage
 
-
+console.log(storagedHtml); 
   //чтение из localStorage
-  if (storagedHtml != 'null') {
+  if (storagedHtml != null) {
   taskList.insertAdjacentHTML('afterend', storagedHtml);
   }
   let closeButtonS = document.querySelectorAll('.close');
