@@ -8,19 +8,22 @@
     <title>Document</title>
 </head>
     <title>ToDo List</title>
-    <link rel="stylesheet" type="text/css" href="https://github.com/ArsenFabulous/toDoList-Page/blob/main/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
     <div class="list">
     <div class="name">СПИСОК ЗАДАЧ</div>
     <div class="toDoMainFragment">
     <textarea   id="place" placeholder="введи задачу" autofocus class="input" ></textarea>
-    <input name="butt" id="button" name="buttonName" class="addButton" type="button" value="+">
+    <input name="butt" id="button" name="button228" class="addButton" type="button" value="+">
     </div>
     <div class="name" >ЗАДАЧИ</div>
+    <!-- реализация динамичного расширения строки ввода
+    <input type="text" onkeydown="this.style.width = (500+(this.value.length + 1) * 8) + 'px';">
+    -->
     </div>
     <div id="taskList">
       
     </div>
-    <script src="https://github.com/ArsenFabulous/toDoList-Page/blob/main/toDoScript.js"></script>
+    <script src="toDoScript.js"></script>
 </body>
 </html>
